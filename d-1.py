@@ -7,13 +7,11 @@ class Circle:
 
     def area(self):
         result = math.pi * self.radius**2
-        rounded_result = round(result, 2)
-        return rounded_result
+        return round(result, 2)
 
     def perimeter(self):
         result = math.pi * 2 * self.radius
-        rounded_result = round(result, 2)
-        return rounded_result
+        return round(result, 2)
 
 
 # # 半径1の円

@@ -8,12 +8,10 @@ class Rectangle:
 
     def area(self):
         result = self.height * self.width
-        formatted_result = f"{result:.2f}"
-        return formatted_result
+        return f"{result:.2f}"
 
     def diagonal(self):
-        result = round(math.sqrt(self.height**2 + self.width**2), 2)
-        return result
+        return round(math.sqrt(self.height**2 + self.width**2), 2)
 
 
 rectangle1 = Rectangle(height=5, width=6)
