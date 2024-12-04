@@ -19,23 +19,22 @@ def sum_of_list(data_list):
     total = 0
     for number in data_list:
         total += number
-    print(total)
 
-    return
+    return total
 
 
 # 最大値　降順にソートして最初の数字を持ってくる
 def max(data_list):
     data_list.sort(reverse=True)
-    print(data_list[0])
-    return
+    
+    return data_list[0]
 
 
 # 最小値　最大値の逆
 def min(data_list):
     data_list.sort()
-    print(data_list[0])
-    return
+
+    return data_list[0]
 
 
 # 平均値
@@ -44,10 +43,11 @@ def average(data_list):
     for number in data_list:
         total += number
     result = total / len(data_list)
-    print(int(result))
+
+    return int(result)
 
 
-sum_of_list(data_list)
-max(data_list)
-min(data_list)
-average(data_list)
+print(sum_of_list(data_list))
+print(max(data_list))
+print(min(data_list))
+print(average(data_list))

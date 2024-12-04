@@ -9,22 +9,22 @@
 
 # N面サイコロをM回振ったときの結果を表示してください
 
-N = int(input("サイコロの面の数は?:"))
-M = int(input("何回振りますか?:"))
+n = int(input("サイコロの面の数は?:"))
+m = int(input("何回振りますか?:"))
 
 # random関数を用いて、一回の施行で出る数字を考える
 import random
 
 
-def dice():
-    return random.randrange(1, N)
+def dice(n):
+    return random.randrange(1, n)
 
 
 # M回やる時のことを考える
 log = []
 throw = 0
-while throw <= M - 1:
-    log.append(dice())
+while throw <= m - 1:
+    log.append(dice(n))
     throw += 1
 
 print(log)
